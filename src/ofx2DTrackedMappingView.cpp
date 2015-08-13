@@ -27,6 +27,9 @@ void ofx2DTrackedMappingView::setup(float x, float y, float w, float h) {
 void ofx2DTrackedMappingView::update() {
 
     ofx2DMappingView::update();
+    mapping_forms.updateForms();
+    object_list.clear();
+    updateObjectList();
 
 }
 
